@@ -32,7 +32,9 @@ export const songs: Song[] = [
   "youtubeUrl": "https://www.youtube.com/watch?v=wAgCAjv_mV4",
   "lyricsEnglish": "Daiva Sneham Varnichidan Vakkukal Pora\nNandhi cholli theerkuvanee jeevitham pora\nKashtappadin kaalangalil\nRakshikkunna snehamorthal\nEthra sthuthichaalum mathivarumo…\n\nDaivasneham varnicheedan vakkukal pora…..\n\n1. Swanthamaayonnumilla Sarvathum nin daanam\nSwasthamaayurangeedaan Sambathil mayangaathey\nMannil saubhagyam nedanaayaalum\nAthmanashtamaayaal bhalamevidey (Daivasneham…)\n\n2. Swapnangal polinjaalum Dukhathaal valnjaalum\nMithrangal akannalum Shathrukkal nirannalum\nRakshakavacham nee maaraathennalum\nAngen munpe poyaal bhayamevidey (Daivasneham…)",
   "lyricsMalayalam": "ദൈവസ്നേഹം വര്‍ണ്ണിച്ചീടാന്‍ വാക്കുകള്‍ പോരാ\nനന്ദി ചൊല്ലിത്തീര്‍ക്കുവാനീ ജീവിതം പോരാ\nകഷ്ടപ്പാടിന്‍ കാലങ്ങളില്‍ രക്ഷിക്കുന്ന സ്നേഹമോര്‍ത്താല്‍\n\nഎത്ര സ്തുതിച്ചാലും മതി വരുമോ? (ദൈവസ്നേഹം..)\n\n1. സ്വന്തമായൊന്നുമില്ല സര്‍വ്വതും നിന്‍ ദാനം\nസ്വസ്തമായുറങ്ങീടാന്‍ സമ്പത്തില്‍ മയങ്ങാതെ\nമന്നിന്‍ സൌഭാഗ്യം നേടാനായാലും\nആത്മ നഷ്ടമായാല്‍ ഫലമെവിടെ? (ദൈവസ്നേഹം..)\n\n2. സ്വപ്നങ്ങള്‍ പൊലിഞ്ഞാലും ദുഃഖത്താല്‍ വലഞ്ഞാലും\nമിത്രങ്ങള്‍ അകന്നാലും ശത്രുക്കള്‍ നിരന്നാ‍ലും\nരക്ഷാകവചം നീ മാറാതെന്നാളും\nഅങ്ങെന്‍ മുന്നേ പോയാല്‍ ഭയമെവിടെ? (ദൈവസ്നേഹം..)"
-},
+}
+
+// Add here
 
 ];
 
