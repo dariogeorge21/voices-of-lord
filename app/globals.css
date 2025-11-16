@@ -1126,7 +1126,7 @@ body {
   font-weight: 700;
   letter-spacing: -0.5px;
   color: var(--primary);
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
   text-align: center;
   text-shadow: 0 2px 4px var(--shadow);
 }
@@ -1301,8 +1301,41 @@ body {
   font-weight: 700;
   letter-spacing: -0.3px;
   color: var(--primary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   text-shadow: 0 2px 4px var(--shadow);
+}
+
+.code-output-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.code-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.source-code-btn {
+  background: linear-gradient(135deg, #2ea44f 0%, #26963f 100%);
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.source-code-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #26963f 0%, #2ea44f 100%);
 }
 
 .code-block {
@@ -1366,39 +1399,237 @@ body {
 }
 
 .instructions-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.5px;
   color: var(--primary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-shadow: 0 2px 4px var(--shadow);
+  text-align: center;
 }
 
-.instructions ol {
-  margin-left: 1.75rem;
-  color: var(--text-primary);
+.instructions-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.instructions li {
-  margin-bottom: 0.875rem;
-  line-height: 1.8;
-  transition: transform 0.3s ease;
+.instruction-step {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--input-bg);
+  border: 2px solid var(--card-border);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  animation: slideUp 0.5s ease-out backwards;
 }
 
-.instructions li:hover {
+.instruction-step:nth-child(1) { animation-delay: 0.1s; }
+.instruction-step:nth-child(2) { animation-delay: 0.15s; }
+.instruction-step:nth-child(3) { animation-delay: 0.2s; }
+.instruction-step:nth-child(4) { animation-delay: 0.25s; }
+.instruction-step:nth-child(5) { animation-delay: 0.3s; }
+.instruction-step:nth-child(6) { animation-delay: 0.35s; }
+.instruction-step:nth-child(7) { animation-delay: 0.4s; }
+
+.instruction-step:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px var(--shadow-hover);
   transform: translateX(4px);
 }
 
-.instructions code {
-  background: var(--input-bg);
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--background);
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow-hover);
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.3px;
+}
+
+.step-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.step-description code {
+  background: var(--accent);
   color: var(--primary);
-  padding: 0.25rem 0.5rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 6px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.875rem;
   font-weight: 600;
   border: 1px solid var(--card-border);
-  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.instructions-note {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border: 2px solid #ffc107;
+  border-radius: 12px;
+  color: #856404;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
+}
+
+:root[data-theme="dark"] .instructions-note {
+  background: linear-gradient(135deg, #3a3a2a 0%, #2a2a1a 100%);
+  border-color: var(--primary);
+  color: var(--text-secondary);
+}
+
+.note-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  color: #ffc107;
+}
+
+:root[data-theme="dark"] .note-icon {
+  color: var(--primary);
+}
+
+.instructions-note strong {
+  color: #856404;
+  font-weight: 700;
+}
+
+:root[data-theme="dark"] .instructions-note strong {
+  color: var(--primary);
+}
+
+.instructions-note a {
+  color: #856404;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+:root[data-theme="dark"] .instructions-note a {
+  color: var(--primary);
+}
+
+.instructions-note a:hover {
+  opacity: 0.8;
+}
+
+/* Contribute Page Footer */
+.contribute-footer {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--card-bg) 0%, var(--card-hover) 100%);
+  border: 2px solid var(--card-border);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--shadow), 0 4px 10px var(--shadow-hover);
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.contribute-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 50%, var(--primary) 100%);
+}
+
+.contribute-footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.contribute-footer .footer-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  letter-spacing: 0.3px;
+}
+
+.contribute-footer .footer-tagline {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--card-border);
+}
+
+.contribute-footer .footer-owner {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-top: 1.5rem;
+}
+
+.contribute-footer .footer-owner strong {
+  font-weight: 700;
+}
+
+.contribute-footer .footer-owner a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.contribute-footer .footer-owner a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.contribute-footer .footer-owner a:hover {
+  color: var(--primary-dark);
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-hover);
+}
+
+.contribute-footer .footer-owner a:hover::after {
+  width: 80%;
 }
 
 /* Footer */
@@ -1668,6 +1899,50 @@ body {
     padding: 0.875rem 1.5rem;
   }
 
+  .code-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .instruction-step {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .step-number {
+    min-width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.375rem;
+  }
+
+  .step-title {
+    font-size: 1.05rem;
+  }
+
+  .instructions-note {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .contribute-footer {
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .contribute-footer .footer-text {
+    font-size: 1rem;
+  }
+
+  .contribute-footer .footer-tagline {
+    font-size: 0.95rem;
+  }
+
+  .contribute-footer .footer-owner {
+    font-size: 0.95rem;
+  }
+
   .contribute-link {
     width: 100%;
     padding: 0.875rem 1.5rem;
@@ -1914,5 +2189,60 @@ body {
 
   .contribute-title {
     font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .instructions-title {
+    font-size: 1.5rem;
+  }
+
+  .instructions-steps {
+    gap: 1rem;
+  }
+
+  .instruction-step {
+    padding: 1rem;
+  }
+
+  .step-number {
+    min-width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .step-title {
+    font-size: 1rem;
+  }
+
+  .step-description {
+    font-size: 0.9rem;
+  }
+
+  .instructions-note {
+    font-size: 0.9rem;
+    padding: 0.875rem;
+  }
+
+  .contribute-footer {
+    padding: 2rem 1.25rem;
+    border-radius: 14px;
+  }
+
+  .contribute-footer .footer-text {
+    font-size: 0.95rem;
+  }
+
+  .contribute-footer .footer-tagline {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .contribute-footer .footer-owner {
+    font-size: 0.9rem;
+  }
+
+  .contribute-footer .footer-owner a {
+    padding: 0.2rem 0.4rem;
   }
 }
