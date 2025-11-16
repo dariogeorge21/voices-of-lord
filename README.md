@@ -44,7 +44,7 @@ A modern web application for browsing Christian Malayalam devotional songs with 
 ## Project Structure
 
 ```
-voice-of-christ/
+voices-of-lord/
 ├── app/
 │   ├── layout.tsx              # Root layout with theme provider
 │   ├── page.tsx                # Main song list page
@@ -83,7 +83,7 @@ voice-of-christ/
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd voice-of-christ
+cd voices-of-lord
 ```
 
 2. Install dependencies:

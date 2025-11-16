@@ -7,43 +7,190 @@ import { Song } from '@/types/song';
 export const songs: Song[] = [
   {
     id: '1',
-    title: 'Karthavin Sneham',
-    youtubeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    lyricsEnglish: `The Lord's love is everlasting
-His mercy endures forever
-In His presence we find peace
-His grace sustains us always
+    title: 'Ennil Alinju Nee Njanaayi Theerumbol',
+    youtubeUrl: 'https://www.youtube.com/embed/ekvmeXZv_IM?si=LYpCx0Q1WB1WA6wD',
+    lyricsEnglish: `Ennil Alinju Nee Njanaayi Theerumbol
+Ninnil Alinju Njan Neeyayi Theerneedan
+Ethra Naalayi Kothichidunnu Nadha
+Enne Nee Neeyakki Mattideename
 
-Chorus:
-Hallelujah, praise the Lord
-His love never fails
-We lift our voices high
-To glorify His name`,
-    lyricsMalayalam: `കർത്താവിന്റെ സ്നേഹം നിത്യമാണ്
-അവന്റെ കരുണ എന്നേക്കും നിലനിൽക്കുന്നു
-അവന്റെ സാന്നിധ്യത്തിൽ നമുക്ക് സമാധാനം കണ്ടെത്താം
-അവന്റെ കൃപ നമ്മെ എപ്പോഴും താങ്ങുന്നു
+Ennil Alinju Nee Njanaayi Theerumbol
+Ninnil Alinju Njan Neeyayi Theerneedan
+Ethra Naalayi Kothichidunnu Nadha
+Enne Nee Neeyakki Mattideename
 
-കോറസ്:
-ഹല്ലേലൂയാ, കർത്താവിനെ സ്തുതിക്കുക
-അവന്റെ സ്നേഹം ഒരിക്കലും പരാജയപ്പെടുന്നില്ല
-നാം നമ്മുടെ ശബ്ദം ഉയർത്തുന്നു
-അവന്റെ നാമത്തെ മഹത്വപ്പെടുത്താൻ`
+Ente Eeshoye Divya Karunyame
+Ninne Kaathirikkam Njan
+Ente Anthyam Vareyum
+
+Ente Eeshoye Divya Karunyame
+Ninne Kathirikkam Njan
+Ente Anthyam Vareyum
+
+-----
+
+Kanalodu Cherumbol, Kanalaai Marumbol
+Thava Thiru Hrudhayathin, Snehamai Theeran
+Kanalodu Cherumbol, Kanalaai Marumbol
+Thava Thiru Hrudhayathin, Snehamai Theeran
+
+Naal Ethrayaayi Njan Aashippuu Eeshoye
+Enne Nin Snehamai Mattane
+Naal Ethrayaayi Njan Aashippuu Eeshoye
+Enne Nin Snehamai Mattane
+
+Ente Eeshoye Divya Karunyame
+Ninne Kaathirikkam Njan
+Ente Anthyam Vareyum
+
+Ente Eeshoye Divya Karunyame
+Ninne Kathirikkam Njan
+Ente Anthyam Vareyum
+
+-----
+
+Kadalodu Cherumbol, Kadalaai Marumbol
+Njaanaam Neerkanam Neeyayi Theerneedaan
+Kadalodu Cherumbol, Kadalaai Marumbol
+Njaanaam Neerkanam Neeyayi Theerneedaan
+
+Naal Ethrayaai Njan Aashippuu Eeshoye
+Neeyam Kadalil Njan Alinju Neeyakan
+Naal Ethrayaai Njan Aashippuu Eeshoye
+Neeyam Kadalil Njan Alinju Neeyakan
+
+Ennil Alinju Nee Njanaayi Theerumbol
+Ninnil Alinju Njan Neeyayi Theerneedan
+Ethra Naalaai Kothichidunnu Nadha
+Enne Nee Neeyakki Mattideename
+
+Ente Eeshoye Divya Karunyame
+Ninne Kaathirikkam Njan
+Ente Anthyam Vareyum
+
+Ente Eeshoye Divya Karunyame
+Ninne Kathirikkam Njan
+Ente Anthyam Vareyum`,
+    lyricsMalayalam: `എന്നിൽ അലിഞ്ഞു നീ ഞാനായ് തീരുമ്പോൾ
+നിന്നിൽ അലിഞ്ഞു ഞാൻ നീയായ് തീർന്നീടാൻ
+എത്ര നാളായ് കൊതിച്ചീടുന്നു നാഥാ
+എന്നെ നീ നീയാക്കി മാറ്റീടേണമേ...
+എന്നിൽ അലിഞ്ഞു നീ ഞാനായ് തീരുമ്പോൾ
+നിന്നിൽ അലിഞ്ഞു ഞാൻ നീയായ് തീർന്നീടാൻ
+എത്ര നാളായ് കൊതിച്ചീടുന്നു നാഥാ
+എന്നെ നീ നീയാക്കി മാറ്റീടേണമേ...
+
+എന്റെ ഈശോയെ ദിവ്യകാരുണ്യമെ
+നിന്നെ കാത്തിരിക്കാം ഞാൻ
+എന്റെയന്ത്യംവരെയും
+എന്റെ ഈശോയെ ദിവ്യകാരുണ്യമെ
+നിന്നെ കാത്തിരിക്കാം ഞാൻ
+
+എന്റെയന്ത്യംവരെയും
+
+
+കനലോട് ചേരുമ്പോൾ കനലായ് മാറുമ്പോൾ
+തവതിരു ഹൃദയത്തിൻ സ്നേഹമായ്ത്തീരാൻ
+കനലോട് ചേരുമ്പോൾ കനലായ് മാറുമ്പോൾ
+തവതിരു ഹൃദയത്തിൻ സ്നേഹമായ്ത്തീരാൻ
+നാളെത്രയായ് ഞാനാശിപ്പൂ ഈശോയെ
+എന്നെ നിൻ സ്നേഹമായ് മാറ്റണെ
+നാളെത്രയായ് ഞാനാശിപ്പൂ ഈശോയെ
+എന്നെ നിൻ സ്നേഹമായ് മാറ്റണെ....
+
+എന്റെ ഈശോയെ ദിവ്യകാരുണ്യമെ
+നിന്നെ കാത്തിരിക്കാം ഞാൻ
+എന്റെയന്ത്യംവരെയും
+എന്റെ ഈശോയെ ദിവ്യകാരുണ്യമെ
+നിന്നെ കാത്തിരിക്കാം ഞാൻ
+
+എന്റെയന്ത്യംവരെയും
+
+കടലോട് ചേരുമ്പോൾ കടലായ് മാറുമ്പോൾ
+ഞാനാം നീർക്കണം നീയായ്ത്തീർന്നീടാൻ
+കടലോട് ചേരുമ്പോൾ കടലായ് മാറുമ്പോൾ
+ഞാനാം നീർക്കണം നീയായ്ത്തീർന്നീടാൻ
+
+നാളെത്രയായ് ഞാനാശിപ്പൂ ഈശോയെ
+നീയാം കടലിൽ ഞാനലിഞ്ഞു നീയാകാൻ
+നാളെത്രയായ് ഞാനാശിപ്പൂ ഈശോയെ
+നീയാം കടലിൽ ഞാനലിഞ്ഞു നീയാകാൻ....
+
+എന്നിൽ അലിഞ്ഞു നീ ഞാനായ് തീരുമ്പോൾ
+നിന്നിൽ അലിഞ്ഞു ഞാൻ നീയായ് തീർന്നീടാൻ
+എത്ര നാളായ് കൊതിച്ചീടുന്നു നാഥാ
+എന്നെ നീ നീയാക്കി മാറ്റീടേണമേ...
+
+എന്റെ ഈശോയെ ദിവ്യകാരുണ്യമെ
+നിന്നെ കാത്തിരിക്കാം ഞാൻ
+എന്റെയന്ത്യംവരെയും
+എന്റെ ഈശോയെ ദിവ്യകാരുണ്യമെ
+നിന്നെ കാത്തിരിക്കാം ഞാൻ
+എന്റെയന്ത്യംവരെയും`
   },
   {
     id: '2',
-    title: 'Yeshu Nallavan',
+    title: 'Divya Karunyame Daivame',
     youtubeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    lyricsEnglish: `Jesus is good, He is faithful
-He heals the broken hearted
-He sets the captives free
-His love transforms our lives
+    lyricsEnglish: `Divya Karunyame Daivame
+Divya Karunyame Snehame
 
-Verse 2:
-In times of trouble, He is near
-His comfort brings us hope
-We trust in His promises
-Forever we will sing`,
+Divyakarunyame Daivame
+Divyakarunyame Snehame
+
+Divya Karunyamaayi, Enne Thedi Ethunna
+Eesho Ange Njaninnaaraadhikkunnu
+Aanandhathodulkkondeedunnu
+
+Divya Karunyamaayi, Enne Thedi Ethunna
+Eesho Ange Njaninnaaraadhikkunnu
+Aanandhathodulkkondeedunnu
+
+-----
+
+Snehamenna Vaakkinnartham Bhoomiyil
+Jeevitham Kondangu Poorthiyaakkumbol
+Sneham Sahanamanennu Njan Ariyunnu
+
+Snehamenna Vaakkinnartham Bhoomiyil
+Jeevitham Kondangu Poorthiyaakkumbol
+Sneham Sahanamaanennu Njanariyunnu
+Sneham Maranamaanennu Njan Kaanunnu
+
+Sneham Baliyaai Theerunnu
+Chankum Chorayum Ekunnu
+Sneham Kurishil Poornnamaakunnu
+Sneham Kurbanayaai Marunnu
+
+Divyakarunyame Daivame
+Divyakarunyame Snehame
+
+-----
+
+Thiruvathaazhathinte Punya Smaranayithil
+Theeyaai Naavil Padaraanaayi Daivamithaa
+Thiruvosthiyaai Roopam Praapichanayunnu
+
+Thiruvathazhathinte Punya Smaranayithil
+Theeyaai Navil Padaraanaayi Daivamithaa
+Thiruvosthiyaai Roopam Prapichanayunnu
+Thirurakthathin Shonimayaarninnanayunnu
+
+Ullil Theeyaayuyarunna
+Divyakarunya Choodil
+Paapathin Shaapangal Eriyenam
+Snehathin Theenaalam Padarenam
+
+Divyakarunyame Daivame
+Divyakarunyame Snehame
+Divyakarunyamaayi, Enne Thedi Ethunna
+Eesho Ange Njaninnaaradhikkunnu
+Aanandhathodulkkondeedunnu
+
+Divyakarunyamaayi Enne Thedi Ethunna
+Eesho Ange Njaninnaaraadhikkunnu
+Aanandhathodulkkondeedunnu
+`,
     lyricsMalayalam: `യേശു നല്ലവനാണ്, അവൻ വിശ്വസ്തനാണ്
 അവൻ തകർന്ന ഹൃദയങ്ങളെ സുഖപ്പെടുത്തുന്നു
 അവൻ ബന്ധിതരെ സ്വതന്ത്രരാക്കുന്നു
