@@ -1,4 +1,4 @@
-# Voice of Christ - Christian Malayalam Devotional Songs
+# Voices of Lord - Christian Malayalam Devotional Songs
 
 A modern web application for browsing Christian Malayalam devotional songs with bilingual lyrics (Malayalam and English). Built with Next.js 14, TypeScript, and Tailwind CSS.
 
@@ -163,4 +163,4 @@ This project is open source and available for community contributions.
 
 ---
 
-**Voice of Christ** © 2025 - Spreading the message of Christ through music
+**Voices of Lord** © 2025 - Spreading the message of Christ through music

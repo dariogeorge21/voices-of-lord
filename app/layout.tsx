@@ -3,7 +3,7 @@ import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
 
 export const metadata: Metadata = {
-  title: "Voice of Christ - Christian Malayalam Devotional Songs",
+  title: "Voices of Lord - Christian Malayalam Devotional Songs",
   description: "Browse and enjoy Christian Malayalam devotional songs with bilingual lyrics (Malayalam and English)",
 };
 

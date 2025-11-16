@@ -33,7 +33,7 @@ export default function Home() {
             </svg>
           </div>
           <h1 className="hero-title">
-            Voice of Christ
+            Voices of Lord
           </h1>
           <p className="hero-subtitle">
             Christian Malayalam Devotional Songs
@@ -217,7 +217,7 @@ export default function Home() {
             Are you a developer? Contribute a Song
           </Link>
           <p className="footer-text">
-            Voice of Christ © {new Date().getFullYear()} - Spreading the message of Christ through music
+            Voices of Lord © {new Date().getFullYear()} - Spreading the message of Christ through music
           </p>
         </div>
       </footer>
