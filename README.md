@@ -1,36 +1,166 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Voice of Christ - Christian Malayalam Devotional Songs
+
+A modern web application for browsing Christian Malayalam devotional songs with bilingual lyrics (Malayalam and English). Built with Next.js 14, TypeScript, and Tailwind CSS.
+
+## Features
+
+### Core Functionality
+- **Song List Page**: Browse all devotional songs in a clean, scrollable list
+- **Real-time Search**: Filter songs by title with instant results
+- **Song Detail Page**: View individual songs with:
+  - Embedded YouTube player
+  - Bilingual lyrics (Malayalam and English)
+  - Easy language toggle
+  - Back navigation to song list
+
+### Developer Features
+- **Contribution Page**: Developer-friendly form to add new songs
+  - Form validation for all fields
+  - YouTube URL validation
+  - JSON code generation
+  - Copy-to-clipboard functionality
+  - Step-by-step contribution instructions
+
+### Theme System
+- **Spiritual Theme** (Default): Bright, peaceful design with gold accents
+- **Dark Theme**: Modern dark mode for comfortable viewing
+- **Theme Persistence**: Your theme preference is saved using localStorage
+- **Smooth Transitions**: Elegant theme switching animations
+
+### Responsive Design
+- Fully responsive layout (320px+)
+- Mobile-first approach
+- Optimized for tablets and desktops
+- Touch-friendly interface
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS + Custom CSS Variables
+- **State Management**: React Context API + Hooks
+- **Data Storage**: TypeScript file (`data/songs.ts`)
+
+## Project Structure
+
+```
+voice-of-christ/
+├── app/
+│   ├── layout.tsx              # Root layout with theme provider
+│   ├── page.tsx                # Main song list page
+│   ├── globals.css             # Global styles and theme variables
+│   ├── contribute/
+│   │   └── page.tsx            # Developer contribution page
+│   └── song/
+│       └── [id]/
+│           ├── page.tsx        # Song detail page
+│           └── not-found.tsx   # 404 page for invalid songs
+├── components/
+│   ├── ClientLayout.tsx        # Client-side layout wrapper
+│   ├── Header.tsx              # Application header
+│   ├── ThemeToggle.tsx         # Theme switcher button
+│   ├── SearchBar.tsx           # Search input component
+│   ├── SongCard.tsx            # Song list item component
+│   ├── YouTubePlayer.tsx       # YouTube embed component
+│   └── LyricsDisplay.tsx       # Lyrics with language toggle
+├── contexts/
+│   └── ThemeContext.tsx        # Theme management context
+├── data/
+│   └── songs.ts                # Song data and helper functions
+├── types/
+│   └── song.ts                 # TypeScript interfaces
+└── public/                     # Static assets
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd voice-of-christ
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+### Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing Songs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### For Developers
 
-## Deploy on Vercel
+1. Navigate to the "Contribute a Song" page (link in footer)
+2. Fill out the form with:
+   - Song title
+   - YouTube URL
+   - Malayalam lyrics
+   - English lyrics
+3. Click "Generate JSON" to create the song object
+4. Copy the generated JSON code
+5. Add it to `data/songs.ts`:
+   - Open the file
+   - Add a comma after the last song in the array
+   - Paste your JSON code
+6. Test locally with `npm run dev`
+7. Create a pull request with your changes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Song Data Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```typescript
+{
+  id: string;              // Unique identifier (auto-generated timestamp)
+  title: string;           // Song title
+  youtubeUrl: string;      // Full YouTube URL or video ID
+  lyricsEnglish: string;   // English lyrics (line breaks preserved)
+  lyricsMalayalam: string; // Malayalam lyrics (line breaks preserved)
+}
+```
+
+## Deployment
+
+This project is optimized for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import the project in Vercel
+3. Deploy with default settings
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## License
+
+This project is open source and available for community contributions.
+
+## Acknowledgments
+
+- Built with ❤️ for spreading the message of Christ through music
+- Thanks to all contributors who help grow this collection
+
+---
+
+**Voice of Christ** © 2025 - Spreading the message of Christ through music
