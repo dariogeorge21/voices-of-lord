@@ -1,5 +1,8 @@
 # Voices of Lord - Christian Malayalam Devotional Songs
 
+🌐 **[Visit Live Site](https://voices-of-lord.vercel.app)** | 🎵 Browse Christian Malayalam Devotional Songs Online
+
+
 A modern web application for browsing Christian Malayalam devotional songs with bilingual lyrics (Malayalam and English). Built with Next.js 14, TypeScript, and Tailwind CSS.
 
 ## Features
