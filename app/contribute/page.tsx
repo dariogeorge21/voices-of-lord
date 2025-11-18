@@ -73,7 +73,6 @@ export default function ContributePage() {
     try {
       await navigator.clipboard.writeText(generatedJson);
       setCopied(true);
-      setTimeout(() => setCopied(false), 3000);
     } catch (err) {
       alert('Failed to copy to clipboard');
     }
