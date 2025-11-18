@@ -114,7 +114,7 @@ export default function ContributePage() {
             <div className="instruction-step">
               <div className="step-number">1</div>
               <div className="step-content">
-                <h3 className="step-title">Fill Out the Form</h3>
+                <h3 className="step-title">Fill Out the Form Down Below</h3>
                 <p className="step-description">
                   Enter the song title, YouTube URL, and lyrics in both Malayalam and English. 
                   Make sure all fields are complete and accurate.
