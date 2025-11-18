@@ -20,6 +20,7 @@ export default function ContributePage() {
 
   const [generatedJson, setGeneratedJson] = useState<string>('');
   const [copied, setCopied] = useState(false);
+  const [instructionsExpanded, setInstructionsExpanded] = useState(false);
 
   const validateYouTubeUrl = (url: string): boolean => {
     const youtubeRegex = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/.+/;
@@ -89,6 +90,24 @@ export default function ContributePage() {
     setCopied(false);
   };
 
+  const toggleInstructions = () => {
+    setInstructionsExpanded(!instructionsExpanded);
+    
+    // Smooth scroll to instructions after expansion
+    if (!instructionsExpanded) {
+      // Use setTimeout to allow the animation to start before scrolling
+      setTimeout(() => {
+        const instructionsElement = document.getElementById('instructions-section');
+        if (instructionsElement) {
+          instructionsElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      }, 200);
+    }
+  };
+
   return (
     <main className="main-container">
       <Link href="/" className="back-button">
@@ -108,7 +127,54 @@ export default function ContributePage() {
           </svg>
           Back to Songs
         </Link>
-      <div className="instructions">
+
+      {/* Instructions Toggle Button */}
+      <div className="instructions-toggle-container">
+        <button
+          onClick={toggleInstructions}
+          className="instructions-toggle-btn"
+          aria-expanded={instructionsExpanded}
+          aria-controls="instructions-section"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className={`instructions-toggle-icon ${instructionsExpanded ? 'expanded' : ''}`}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25A8.966 8.966 0 0118 3.75c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0118 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+            />
+          </svg>
+          <span className="instructions-toggle-text">
+            {instructionsExpanded ? 'Hide Instructions' : 'View Instructions'}
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className={`instructions-chevron ${instructionsExpanded ? 'expanded' : ''}`}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="instructions-section"
+        className={`instructions-container ${instructionsExpanded ? 'expanded' : 'collapsed'}`}
+      >
+        <div className="instructions">
           <h2 className="instructions-title">How to Submit Your Contribution</h2>
           <div className="instructions-steps">
             <div className="instruction-step">
@@ -211,6 +277,7 @@ export default function ContributePage() {
             </div>
           </div>
         </div>
+      </div>
       <div className="contribute-container">
         <h1 className="contribute-title">Contribute a Song</h1>
         <p className="contribute-description">
